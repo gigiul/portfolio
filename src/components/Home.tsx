@@ -22,7 +22,7 @@ const Home = () => {
         className='text-sm italic max-w-[50%] m-auto text-[#A0A1A0]'
       sequence={[
         '"My curiosity and my desire to learn new things allows me to approach problems and situations from different perspectives"', // Types 'One'
-        1000, // Waits 1s
+        3000, // Waits 1s
         ''
       ]}
       wrapper="div"
