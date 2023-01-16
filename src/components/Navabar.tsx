@@ -1,8 +1,13 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 import { Link, animateScroll as scroll, } from 'react-scroll'
 
 const Navabar = () => {
+
+    /* scroll */
+    const myDivRef = useRef<HTMLDivElement>(null);
+
+    
 
     const [toggle, setToggle] = useState(false)
 
@@ -13,13 +18,13 @@ const Navabar = () => {
   return (
     <div className='max-w-[95%] m-auto py-4 border-b-[1px] border-white fixed top-0 left-0 right-0 bg-black/90 z-20'>
         <ul className='hidden md:flex justify-end font-bold gap-8 cursor-pointer'>
-            <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
-            <p>|</p>
-            <li><Link to="about" smooth={true} duration={500}>About</Link></li>
-            <p>|</p>
-            <li><Link to="knwoledge" smooth={true} duration={500}>Knowledge</Link></li>
-            <p>|</p>
-            <li><Link to="career" smooth={true} duration={500}>Career</Link></li>
+            <li><Link className='hover:border-b-2' to="home" smooth={true} duration={500}>Home</Link></li>
+            <span className='separator'>|</span>
+            <li><Link className='hover:border-b-2' to="about" smooth={true} duration={500}>About</Link></li>
+            <span className='separator'>|</span>
+            <li><Link className='hover:border-b-2' to="knwoledge" smooth={true} duration={500}>Knowledge</Link></li>
+            <span className='separator'>|</span>
+            <li><Link className='hover:border-b-2' to="career" smooth={true} duration={500}>Career</Link></li>
         </ul>
         <div className='md:hidden flex justify-end mr-8'>
             {!toggle ? (

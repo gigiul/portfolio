@@ -4,12 +4,10 @@ import { RxDotFilled } from 'react-icons/rx';
 import {FiCpu} from 'react-icons/fi'
 import {BsCodeSlash, BsLightbulb} from 'react-icons/bs'
 import {IoDiceOutline} from 'react-icons/io5'
-import {GrLanguage, GrSystem} from 'react-icons/gr'
 import {CiMonitor} from 'react-icons/ci'
 import {BiWorld} from 'react-icons/bi'
 
 const Knowledge = () => {
-    const slides: typeof Array[] = [];
 
     const [current, setCurrent] = useState(1);
 
@@ -20,15 +18,8 @@ const Knowledge = () => {
     const nextSlide = () => {
         setCurrent(current === 6 ? 1 : current + 1);
     }
-
-    const goToSlide = (slideIndex: any) => {
-        setCurrent(slideIndex);
-      };
-
-    
+  
       const renderSwitchData = (current: any) => {
-
-        console.log("switch current", current);
         if(current)
         switch (current) {
             case 1:
@@ -38,12 +29,30 @@ const Knowledge = () => {
                     <h3 className='font-bold uppercase italic'>Technologies</h3>
                 </div>
                 <ul className='flex flex-col gap-1 mt-4 text-center'>
-                    <li>React/Next</li>
-                    <li>Nest</li>
-                    <li>Tailwind</li>
-                    <li>HTML/CSS</li>
-                    <li>Git</li>
-                    <li>Docker</li>
+                    <div className='flex flex-col'>
+                    <li className='flex justify-start'>React/Next</li>
+                    <div className="w-[150px] h-[10px] shadow-lg rounded-xl bg-slate-300"></div>
+                    </div>
+                    <div className='flex flex-col'>
+                    <li className='flex justify-start'>Tailwindcss</li>
+                    <div className="w-[150px] h-[10px] shadow-lg rounded-xl bg-slate-400"></div>
+                    </div>
+                    <div className='flex flex-col'>
+                    <li className='flex justify-start'>HTML/CSS</li>
+                    <div className="w-[120px] h-[10px] shadow-lg rounded-xl bg-slate-300"></div>
+                    </div>
+                    <div className='flex flex-col'>
+                    <li className='flex justify-start'>Nest</li>
+                    <div className="w-[100px] h-[10px] shadow-lg rounded-xl bg-slate-400"></div>
+                    </div>
+                    <div className='flex flex-col'>
+                    <li className='flex justify-start'>Git</li>
+                    <div className="w-[100px] h-[10px] shadow-lg rounded-xl bg-slate-300"></div>
+                    </div>
+                    <div className='flex flex-col'>
+                    <li className='flex justify-start'>Docker</li>
+                    <div className="w-[100px] h-[10px] shadow-lg rounded-xl bg-slate-400"></div>
+                    </div>
                 </ul>
             </div>);
             case 2:
@@ -53,12 +62,30 @@ const Knowledge = () => {
                     <h3 className='font-bold uppercase italic'>Languages</h3>
                 </div>
                 <ul className='flex flex-col gap-1 mt-4 text-center'>
-                    <li>Javascript</li>
-                    <li>Typescript</li>
-                    <li>C & C++</li>
-                    <li>Python</li>
-                    <li>Bash</li>
-                    <li>SQL</li>
+                <div className='flex flex-col'>
+                    <li className='flex justify-start'>Javascript</li>
+                    <div className="w-[150px] h-[10px] shadow-lg rounded-xl bg-slate-400"></div>
+                    </div>
+                    <div className='flex flex-col'>
+                    <li className='flex justify-start'>Typescript</li>
+                    <div className="w-[130px] h-[10px] shadow-lg rounded-xl bg-slate-300"></div>
+                    </div>
+                    <div className='flex flex-col'>
+                    <li className='flex justify-start'>C & C++</li>
+                    <div className="w-[100px] h-[10px] shadow-lg rounded-xl bg-slate-400"></div>
+                    </div>
+                    <div className='flex flex-col'>
+                    <li className='flex justify-start'>Python</li>
+                    <div className="w-[90px] h-[10px] shadow-lg rounded-xl bg-slate-300"></div>
+                    </div>
+                    <div className='flex flex-col'>
+                    <li className='flex justify-start'>Bash</li>
+                    <div className="w-[130px] h-[10px] shadow-lg rounded-xl bg-slate-400"></div>
+                    </div>
+                    <div className='flex flex-col'>
+                    <li className='flex justify-start'>SQL</li>
+                    <div className="w-[100px] h-[10px] shadow-lg rounded-xl bg-slate-300"></div>
+                    </div>
                 </ul>
             </div>);
             case 3:
@@ -68,9 +95,18 @@ const Knowledge = () => {
                     <h3 className='font-bold uppercase italic'>Quality</h3>
                 </div>
                 <ul className='flex flex-col gap-1 mt-4 text-center'>
-                    <li>Problem Solving</li>
-                    <li>Analytical Mind</li>
-                    <li>Indipendent Learning</li>
+                <div className='flex flex-col'>
+                    <li className='flex justify-start'>Problem Solving</li>
+                    <div className="w-[150px] h-[10px] shadow-lg rounded-xl bg-slate-300"></div>
+                    </div>
+                    <div className='flex flex-col'>
+                    <li className='flex justify-start'>Analitycal Mind</li>
+                    <div className="w-[120px] h-[10px] shadow-lg rounded-xl bg-slate-400"></div>
+                    </div>
+                    <div className='flex flex-col'>
+                    <li className='flex justify-start'>Indipendent Learning</li>
+                    <div className="w-[130px] h-[10px] shadow-lg rounded-xl bg-slate-300"></div>
+                    </div>
                 </ul>
             </div>);
             case 4:
@@ -80,9 +116,18 @@ const Knowledge = () => {
                     <h3 className='font-bold uppercase italic'>Soft Skills</h3>
                 </div>
                 <ul className='flex flex-col gap-1 mt-4'>
-                    <li>Team Work</li>
-                    <li>Communication</li>
-                    <li>Creativity</li>
+                <div className='flex flex-col'>
+                    <li className='flex justify-start'>Team Work</li>
+                    <div className="w-[150px] h-[10px] shadow-lg rounded-xl bg-slate-300"></div>
+                    </div>
+                    <div className='flex flex-col'>
+                    <li className='flex justify-start'>Communication</li>
+                    <div className="w-[130px] h-[10px] shadow-lg rounded-xl bg-slate-400"></div>
+                    </div>
+                    <div className='flex flex-col'>
+                    <li className='flex justify-start'>Creativity</li>
+                    <div className="w-[130px] h-[10px] shadow-lg rounded-xl bg-slate-300"></div>
+                    </div>
                 </ul>
             </div>);
             case 5:
@@ -92,9 +137,18 @@ const Knowledge = () => {
                     <h3 className='font-bold uppercase italic'>Languages</h3>
                 </div>
                 <ul className='flex flex-col gap-1 mt-4'>
-                    <li>Italian</li>
-                    <li>English</li>
-                    <li>Spanish</li>
+                <div className='flex flex-col'>
+                    <li className='flex justify-start'>Italian</li>
+                    <div className="w-[150px] h-[10px] shadow-lg rounded-xl bg-slate-300"></div>
+                    </div>
+                    <div className='flex flex-col'>
+                    <li className='flex justify-start'>English</li>
+                    <div className="w-[120px] h-[10px] shadow-lg rounded-xl bg-slate-400"></div>
+                    </div>
+                    <div className='flex flex-col'>
+                    <li className='flex justify-start'>Spanish</li>
+                    <div className="w-[60px] h-[10px] shadow-lg rounded-xl bg-slate-300"></div>
+                    </div>
                 </ul>
             </div>);
             case 6:
@@ -104,9 +158,18 @@ const Knowledge = () => {
                     <h3 className='font-bold uppercase italic'>Operating Systems</h3>
                 </div>
                 <ul className='flex flex-col gap-1 mt-4'>
-                    <li>Windows/Windows Server</li>
-                    <li>MacOS</li>
-                    <li>Linux</li>
+                <div className='flex flex-col'>
+                    <li className='flex justify-start'>Windows/Windows Server</li>
+                    <div className="w-[150px] h-[10px] shadow-lg rounded-xl bg-slate-300"></div>
+                    </div>
+                    <div className='flex flex-col'>
+                    <li className='flex justify-start'>MacOS</li>
+                    <div className="w-[150px] h-[10px] shadow-lg rounded-xl bg-slate-400"></div>
+                    </div>
+                    <div className='flex flex-col'>
+                    <li className='flex justify-start'>Linux</li>
+                    <div className="w-[150px] h-[10px] shadow-lg rounded-xl bg-slate-300"></div>
+                    </div>
                 </ul>
             </div>);
             default:
@@ -114,21 +177,19 @@ const Knowledge = () => {
             }
     }
 
-    console.log("current: ", current)
-
   return (
-    <div className='max-w-[1400px] h-[500px] w-full m-auto py-16 px-4 relative group'>
-        <div    className='flex justify-center items-center w-full h-[95%] rounded-2xl'/>
+    <div id='knwoledge' className='max-w-[1400px] h-[500px] w-full m-auto py-16 px-4 relative group'>
+        <div    className='flex justify-center items-center w-full h-[98%] rounded-2xl'/>
             <div className='z-10 absolute top-[50%] right-[50%] left-[0] -translate-x-0  translate-y-[-50%] bg-gray-600/10 rounded-3xl w-full'>
                 {renderSwitchData(current)}
             </div>
-            <div className='z-20 absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 group-hover:bg-black/20 text-white cursor-pointer'>
+            <div className='z-10 absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 group-hover:bg-black/20 text-white cursor-pointer'>
                 <BsChevronCompactLeft  onClick={prevSlide} size={30} />
             </div>
-            <div className='z-20 absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 group-hover:bg-black/20 text-white cursor-pointer'>
+            <div className='z-10 absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 group-hover:bg-black/20 text-white cursor-pointer'>
                 <BsChevronCompactRight  onClick={nextSlide} size={30} />
             </div>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center mt-4'>
                     <div className='text-2xl cursor-pointer hover:text-white/50' onClick={() => setCurrent(1)} >
                         <RxDotFilled />
                     </div>

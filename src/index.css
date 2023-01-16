@@ -21,3 +21,32 @@
       h1 {
         @apply text-5xl font-bold
       }
+    
+      .square {
+        width: 50%;
+        padding-bottom: 50%;
+        background-color: teal; 
+      }
+
+      .count-enter {
+        opacity: 0;
+        transform: scale(0.5);
+     }
+     
+     .count-enter-active {
+        opacity: 1;
+        transform: scale(1);
+        transition: all 300ms ease-out;
+     }
+     
+     .count-exit {
+        opacity: 1;
+        transform: scale(1);
+     }
+     
+     .count-exit-active {
+        opacity: 0;
+        transform: scale(0.5);
+        transition: all 300ms ease-out;
+     }
+     

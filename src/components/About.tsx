@@ -9,8 +9,8 @@ import {HiBookOpen} from 'react-icons/hi'
 
 const About = () => {
     return (
-        <div data-name='about'   
-             className='max-w-[95%] m-auto mt-8'>
+        <div id='about'   
+             className='md:max-w-[80%] max-w-[95%] m-auto mt-8'>
             <div className='grid md:grid-cols-2 grid-cols-1'>
             <div className='flex justify-center items-center'>
                 <img 

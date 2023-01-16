@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
   return (
-    <div data-name='home'
+    <div id='home'
         className='max-w-[95%] h-[500px] m-auto mt-4 p-16 flex flex-col items-center justify-center bg-cover' 
         style={{ backgroundImage: `url(${background})`}}
     >
