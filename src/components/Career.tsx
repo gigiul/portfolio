@@ -33,13 +33,13 @@ const Career = () => {
 
         
         {/*Career*/}
-        <div className='max-w-[95%] m-auto pt-12'>
+        <div className='md:max-w-[85%] max-w-[95%] m-auto pt-12'>
         <div id='career' className='mb-4'>
             <p>Career</p>
             <h1>Jobs Career</h1>
         </div>
         <div className='flex flex-col md:flex-row gap-8'>
-            <div className='bg-gray-600/10 rounded-2xl'>
+            <div className='bg-gray-600/20 rounded-2xl'>
                 <div className='flex gap-8 md:m-8 mt-4 ml-3'>
                     <FaSpaceShuttle size={30} className='text-white'/>
                 </div> 
@@ -50,7 +50,7 @@ const Career = () => {
                     <li className='mx-4 my-4'>Coordination and executive participation in all the departments of the company, including software development, marketing and communications, business development, legal, product and service development.</li>
                 </ul>
             </div>
-            <div className='bg-gray-600/10 rounded-2xl'>
+            <div className='bg-gray-600/20 rounded-2xl'>
                 <div className='flex gap-8 md:m-8 mt-4 ml-3'>
                     <MdOutlineComputer size={30} className='text-white'/>
                 </div> 
