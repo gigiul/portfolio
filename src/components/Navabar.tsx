@@ -25,6 +25,8 @@ const Navabar = () => {
             <li><Link className='hover:border-b-2' to="knwoledge" smooth={true} duration={500}>Knowledge</Link></li>
             <span className='separator'>|</span>
             <li><Link className='hover:border-b-2' to="career" smooth={true} duration={500}>Career</Link></li>
+            <span className='separator'>|</span>
+            <li><Link className='hover:border-b-2' to="portfolio" smooth={true} duration={500}>Portfolio</Link></li>
         </ul>
         <div className='md:hidden flex justify-end mr-8'>
             {!toggle ? (
@@ -41,6 +43,7 @@ const Navabar = () => {
                     <li><Link onClick={handleToggle} to="about" smooth={true} duration={500}>About</Link></li>
                     <li><Link onClick={handleToggle} to="knwoledge" smooth={true} duration={500}>Knowledge</Link></li>
                     <li><Link onClick={handleToggle} to="career" smooth={true} duration={500}>Career</Link></li>
+                    <li><Link onClick={handleToggle} to="portfolio" smooth={true} duration={500}>Portfolio</Link></li>
                     </ul>
 
             </div>

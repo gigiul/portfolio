@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 import {FiCpu} from 'react-icons/fi'
@@ -6,6 +6,7 @@ import {BsCodeSlash, BsLightbulb} from 'react-icons/bs'
 import {IoDiceOutline} from 'react-icons/io5'
 import {CiMonitor} from 'react-icons/ci'
 import {BiWorld} from 'react-icons/bi'
+import { useSwipeable } from 'react-swipeable';
 
 const Knowledge = () => {
 
@@ -177,6 +178,19 @@ const Knowledge = () => {
             }
     }
 
+    /* mobile swipe */
+    const MyComponent = () => {
+        const handlers = useSwipeable({ onSwiped: () => console.log('swiped') })
+
+        const myRef = useRef();
+        const refPassthrough = (el: any) => {
+            // call useSwipeable ref prop with el
+            handlers.ref(el);
+        
+            // set myRef el so you can access it yourself
+            myRef.current = el;
+    }}
+
   return (
     <div id='knwoledge' className='max-w-[1400px] h-[500px] w-full m-auto py-16 px-4 relative group'>
         <div    className='flex justify-center items-center w-full h-[98%] rounded-2xl'/>
@@ -184,7 +198,7 @@ const Knowledge = () => {
                 {renderSwitchData(current)}
             </div>
             <div className='z-10 absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 group-hover:bg-black/20 text-white cursor-pointer'>
-                <BsChevronCompactLeft  onClick={prevSlide} size={30} />
+                <BsChevronCompactLeft onClick={prevSlide} size={30} />
             </div>
             <div className='z-10 absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 group-hover:bg-black/20 text-white cursor-pointer'>
                 <BsChevronCompactRight  onClick={nextSlide} size={30} />

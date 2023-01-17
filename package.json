@@ -20,6 +20,7 @@
     "react-router-dom": "^6.6.2",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
+    "react-swipeable": "^7.0.0",
     "react-transition-group": "^4.4.5",
     "react-type-animation": "^2.1.2",
     "react-visibility-sensor": "^5.1.1",
@@ -30,7 +31,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

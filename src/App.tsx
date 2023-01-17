@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Knowledge from './components/Knowledge';
 import Navabar from './components/Navabar';
+import Portfolio from './components/Portfolio';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Knowledge />
       <Career />
+      <Portfolio />
       <Footer />
     </div>
   );
