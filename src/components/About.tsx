@@ -19,11 +19,11 @@ const About = () => {
                     className='h-[300px] rounded-2xl' />
             </div>
             <div>
-                <h3>Biography</h3>
+                <h3 className='mt-4'>Biography</h3>
                 <h1>Who I am</h1>
-                <p className='italic md:text-md text-sm'>Hey my name is Luigi. After graduating in violin I decided to deepen my passion for Tech World.
+                <p className='italic md:text-md text-sm mt-4'>Hey my name is Luigi. After graduating in violin I decided to deepen my passion for Tech World.
                     I worked for two years as a system administrator and then continued my training at 42RomaLuiss, an innovative coding school without teachers. To date I am looking for new experiences to continue to grow in this sector.</p>
-                <div className='grid md:grid-cols-2 grid-cols-1 mt-4 gap-4'>
+                <div className='grid md:grid-cols-2 grid-cols-1 mt-8 gap-4'>
                     <div className='flex flex-col gap-4 md:p-4 pl-4'>                            
                         <div className='flex items-center justify-start'>
                             <div className='flex justify-start'>
@@ -55,13 +55,13 @@ const About = () => {
                         </div>
                     </div>
                     {/*Second column  */}
-                    <div className='flex flex-col gap-4 md:pl-0 pl-4'>
+                    <div className='flex flex-col gap-4 md:pl-0 pl-4 md:mt-4'>
                     <div className='flex items-center justify-start'>
                         <div className='flex justify-start'>
                             <IoLogoGameControllerB className='mr-1'></IoLogoGameControllerB>
                         </div>
                         <p className='mr-1 font-bold'>Interests: </p>
-                        <p className='md:text-md text-sm text-[#A0A1A0]'>Coding, Games, Music, Soccer</p>
+                        <p className='md:text-md text-sm text-[#A0A1A0]'>Coding, Games, Music, Sport</p>
                     </div>
                     <div className='flex items-center justify-start'>
                         <div className='flex justify-start'>

@@ -13,12 +13,12 @@ const Home = () => {
                 <img    
                     src={profile}
                     alt="profile"
-                    className='rounded-full w-44 h-44'
+                    className='rounded-full w-44 h-44 '
                 />
                 <h1 className='md:text-4xl text-2xl text-bold'>Luigi <span className='inline-block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-600'>Dalle Aste</span></h1>
             </div>
             <TypeAnimation
-                className='absolute md:top-[52%] top-[53%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-sm italic w-[22rem] text-[#A0A1A0]'
+                className='absolute md:top-[52%] top-[53%] md:mt-0 mt-4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-sm italic w-[22rem] text-[#A0A1A0]'
                 sequence={[
                 '"My curiosity and my desire to learn new things allows me to approach problems and situations from different perspectives"', // Types 'One'
                 3000, // Waits 1s
