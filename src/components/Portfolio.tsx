@@ -38,7 +38,7 @@ const Portfolio = () => {
                  <p className='text-sm text-center text-[#A0A1A0] mb-2'>"Cryptocurrency App" with Coingecko API </p>         
                 <iframe 
                     className='md:opacity-50 hover:opacity-100 border-2 rounded-md'
-                    src="https://gigiul.github.io/landing_page_2/"
+                    src="https://gigiul.github.io/crypto_app/"
                     width="100%"
                     height="600px"
                 />
