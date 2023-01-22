@@ -8,6 +8,7 @@ import Knowledge from './components/Knowledge';
 import Navabar from './components/Navabar';
 import Portfolio from './components/Portfolio';
 
+
 function App() {
   return (
     <div>
