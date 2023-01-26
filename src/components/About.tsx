@@ -37,7 +37,7 @@ const About = () => {
                                 <MdGpsFixed className='mr-1'></MdGpsFixed>
                             </div>
                             <p className='mr-1 font-bold'>Location: </p>
-                            <p className='md:text-md text-sm text-[#A0A1A0]'>Actually in Rome</p>
+                            <p className='md:text-md text-sm text-[#A0A1A0]'>Currently in Rome</p>
                         </div>
                         <div className='flex items-center justify-start'>
                             <div className='flex justify-start'>
