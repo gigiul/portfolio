@@ -44,12 +44,12 @@ const Portfolio = () => {
                 />
             </div>    
             <div className='flex flex-col items-center justify-center md:p-16 p-4 w-full'>
-                <button onClick={() => window.open("https://gigiul.github.io/meteo_site/", "_blank")}
-                 className='rounded-xl border-2 border-white mb-1'>Open Site</button>
-                 <p className='text-sm text-center text-[#A0A1A0] mb-2'>A simple "Weather App" with Openweather API</p>         
+                <button onClick={() => window.open("https://gigiulspotifyclone.netlify.app/", "_blank")}
+                 className='rounded-xl border-2 border-white mb-1'>Music Player</button>
+                 <p className='text-sm text-center text-[#A0A1A0] mb-2'>Music Player with ShazamAPI & Redux</p>         
                 <iframe 
                     className='md:opacity-50 hover:opacity-100 border-2 rounded-md'
-                    src="https://gigiul.github.io/meteo_site/"
+                    src="https://gigiulspotifyclone.netlify.app/"
                     width="100%"
                     height="600px"
                 />
