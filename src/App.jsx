@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Navbar } from "./components";
+import { Navbar, Hero } from "./components";
 import { BrowserRouter } from "react-router-dom";
 
 
@@ -7,6 +7,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
+      <Hero />
     </BrowserRouter>
   );
 }
