@@ -1,13 +1,18 @@
 import { useState } from 'react'
-import { Navbar, Hero } from "./components";
+import { Navbar, Hero, About } from "./components";
 import { BrowserRouter } from "react-router-dom";
 
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Hero />
+    <div className='bg-primary'>
+      <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+        <Navbar />
+        <Hero />
+      </div>
+      <About />
+    </div>
     </BrowserRouter>
   );
 }
