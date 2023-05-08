@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Navbar, Hero, About } from "./components";
+import { Navbar, Hero, About, Knowledge, Experience, Projects } from "./components";
 import { BrowserRouter } from "react-router-dom";
 
 
@@ -12,6 +12,9 @@ const App = () => {
         <Hero />
       </div>
       <About />
+      <Knowledge />
+      <Experience />
+      <Projects />
     </div>
     </BrowserRouter>
   );

@@ -1,5 +1,5 @@
 import React from 'react'
-import gigiul from '../assets/github.png'
+import gigiul from '../assets/gigiul.png'
 import { Wrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
@@ -18,15 +18,14 @@ const About = () => {
                 <h2 className={styles.sectionHeadText}>Who I am.</h2>
             </motion.div>
             <div className='grid md:grid-cols-2 grid-cols-1'>
-                <div className='flex justify-start items-center'>
+                <div className='flex justify-start xl:items-center items-start'>
                     <img
                         src={gigiul}
                         alt="/github_image"
                         className='h-[300px] rounded-2xl' />
                 </div>
                 <div>
-                    <p className='italic md:text-xl text-sm mt-4 bg-clip-text bg-gradient-to-r from-[#915EFF] to-pink-600 text-transparent '>After graduating in violin I decided to deepen my passion for Tech World.
-                        I worked for two years as a system administrator and then continued my training at 42RomaLuiss, an innovative coding school without teachers. To date I am still looking for new experiences to continue to grow in this sector.
+                    <p className='italic md:text-xl text-sm mt-4 bg-clip-text bg-gradient-to-r from-[#915EFF] to-pink-600 text-transparent '>After graduating in violin, I decided to deepen my passion for the Tech world. I worked for two years as a system administrator and then continued my education at 42RomaLuiss, an innovative teacherless coding school. To this day I am still looking for new experiences to continue growing in this field.
                     </p>
                     <div className="flex xl:flex-row flex-col mt-8 gap-4">
                         <div className="w-full flex flex-col gap-4 whitespace-nowrap">
@@ -43,7 +42,7 @@ const About = () => {
                                 <motion.div key={index} variants={fadeIn('left', 'spring', null, '1.5')} className="flex">
                                     {<info.icon className='w-5 h-5 mr-2' />}
                                     <p className="capitalize font-bold ">{info.id}: &nbsp;</p>
-                                    { info.id === "github" ? <a className='text-secondary underline hover:text-white' href='https://github.com/gigiul'>Gigiul</a> :  info.id === "email" ? <a className='text-secondary underline hover:text-white' href='mailto:luigidalleaste@gmail.com'>Mailto</a> : <p className="text-secondary" >{info.text}</p>}
+                                    { info.id === "github" ? <a className='text-secondary underline hover:text-white' href={info.text} target='_blank'>Gigiul</a> :  info.id === "email" ? <a className='text-secondary underline hover:text-white' href={info.text}>Mailto</a> : <p className="text-secondary" >{info.text}</p>}
                                 </motion.div>
                             ))}
                         </div>
