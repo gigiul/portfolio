@@ -11,6 +11,9 @@ import { bioInfos } from "../constants";
 
 
 const About = () => {
+
+    const [reveal, setReveal] = React.useState(false);
+
     return (
         <div>
             <motion.div variants={textVariant()}>
@@ -42,7 +45,7 @@ const About = () => {
                                 <motion.div key={index} variants={fadeIn('left', 'spring', null, '1.5')} className="flex">
                                     {<info.icon className='w-5 h-5 mr-2' />}
                                     <p className="capitalize font-bold ">{info.id}: &nbsp;</p>
-                                    { info.id === "github" ? <a className='text-secondary underline hover:text-white' href={info.text} target='_blank'>Gigiul</a> :  info.id === "email" ? <a className='text-secondary underline hover:text-white' href={info.text}>Mailto</a> : <p className="text-secondary" >{info.text}</p>}
+                                    { info.id === 'phone' ? (reveal ? <p className="text-secondary" >{info.text}</p> : <p className='bg-slate-800/50 backdrop-blur-2xl cursor-pointer px-2 py-0 rounded-2xl ' onClick={() => setReveal(!reveal)}>Reveal</p>) : info.id === "github" ? <a className='text-secondary underline hover:text-white' href={info.text} target='_blank'>Gigiul</a> :  info.id === "email" ? <a className='text-secondary underline hover:text-white' href={info.text}>Mailto</a> : <p className="text-secondary" >{info.text}</p>}
                                 </motion.div>
                             ))}
                         </div>

@@ -31,6 +31,8 @@ import {
     virtualsun,
     playerself,
     mrs,
+    //projects
+    spotify,
 } from '../assets'
 
 
@@ -51,10 +53,6 @@ export const navLinks = [
         id: 'projects',
         title: 'Projects',
     },
-    {
-        id: 'contact',
-        title: 'Contact',
-    }
 ]
 
 export const bioInfos = [
@@ -275,66 +273,88 @@ export const experiences = [
 
 export const projects = [
     {
-      name: "Car Rent",
+      name: "Boarding Kennels",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Live production site for a boarding kennels business. The contact form is powered by Email.js",
       tags: [
         {
-          name: "react",
+          name: "Reactjs",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Tailwindcss",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Netlify",
           color: "pink-text-gradient",
         },
       ],
-      image: null,
-      source_code_link: "https://github.com/",
+      iframe: 'https://gigiul.github.io/boarding_kennels/',
+      github_link: "https://github.com/gigiul/boarding_kennels/",
     },
     {
-      name: "Job IT",
+      name: "Spotify Clone",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Spotify clone using React, Redux, FastAPI and ShazamAPI.",
       tags: [
         {
-          name: "react",
+          name: "Redux",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "FastAPI",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Netlify",
           color: "pink-text-gradient",
         },
       ],
-      image: null,
-      source_code_link: "https://github.com/",
+  /*     iframe: 'https://gigiulspotifyclone.netlify.app/', */
+      image: spotify,
+      github_link: "https://github.com/gigiul/spotify_clone",
     },
     {
-      name: "Trip Guide",
+      name: "Netflix Clone",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Rebuild Netflix using TheMovieDB API and Firebase for authentication",
       tags: [
         {
-          name: "nextjs",
+          name: "Reactjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Tailwindcss",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Firebase",
           color: "pink-text-gradient",
         },
       ],
-      image: null,
-      source_code_link: "https://github.com/",
+      iframe: 'https://gigiul.github.io/netflix_frontend/',
+      github_link: "https://github.com/gigiul/netflix_frontend",
+    },
+    {
+      name: "Crypto Tracker",
+      description:
+        "Crypto tracker using CoinGecko API",
+      tags: [
+        {
+          name: "Reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "CoinGecko",
+          color: "pink-text-gradient",
+        },
+      ],
+      iframe: 'https://gigiul.github.io/crypto_app/',
+      github_link: "https://github.com/gigiul/crypto_app/",
     },
   ];

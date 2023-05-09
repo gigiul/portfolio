@@ -18,11 +18,13 @@ import virtualsun from "./virtualsun.png";
 import playerself from "./playerself.png";
 import mrs from "./mrs.png";
 import github from "./github.png";
+import spotify from "./spotify.png";
 
 export {
     menu,
     close,
     github,
+    spotify,
     //tech
     css,
     docker,
