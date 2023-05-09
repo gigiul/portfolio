@@ -231,32 +231,32 @@ export const textures = [
 
 export const experiences = [
     {
-      title: "Full stack Developer",
-      company_name: "Modular Radar System (Remote)",
-      icon: mrs,
-      iconBg: "#E6DEDD",
-      date: "Feb 2023 - Present",
-      points: [
-          "Developing and maintaining web applications for internal purpose using React.js and Node.js.",
-          "Developing Front/Backend code for R&D projects that interact with radars technology.",
-          "Main CSS framework used: BootstrapCSS",
-          "Main Backend library used: WS",
-      ],
-  },
+        title: "Full stack Developer",
+        company_name: "Modular Radar System (Remote)",
+        icon: mrs,
+        iconBg: "#E6DEDD",
+        date: "Feb 2023 - Present",
+        points: [
+            "Developing and maintaining web applications for internal purpose using React.js and Node.js.",
+            "Developing Front/Backend code for R&D projects that interact with radars technology.",
+            "Main CSS framework used: BootstrapCSS",
+            "Main Backend library used: WS",
+        ],
+    },
     {
         title: "Developer & Operations Manager",
         company_name: "Playerself",
-        icon: playerself ,
+        icon: playerself,
         iconBg: "#383E56",
         date: "Jan 2022 - Present",
         points: [
-          "Coordinating and participating in executive-level activities across all departments of the company.",
-          "Leading and supporting software development initiatives.",
-          "Overseeing marketing and communications efforts.",
-          "Supporting business development activities.",
-          "Deciding and supporting product/service development"
+            "Coordinating and participating in executive-level activities across all departments of the company.",
+            "Leading and supporting software development initiatives.",
+            "Overseeing marketing and communications efforts.",
+            "Supporting business development activities.",
+            "Deciding and supporting product/service development"
         ],
-      },
+    },
     {
         title: "System Administrator",
         company_name: "Virtualsun",
@@ -264,97 +264,97 @@ export const experiences = [
         iconBg: "#383E56",
         date: "Oct 2018 - Nov 2020",
         points: [
-          "Installation, configuration, maintenance and administration of customers' IT systems such as computers, servers, routers, switches, backup systems.",
-          "Skills in installing, configuring, maintaining and administering operating systems such as Windows, Linux and macOS. In particular in the management of the Active Directory of Windows Server",
-          "Managing virtualization solutions with VMWare ESXi, including creating virtual machines and managing host clusters. Knowledge of physical server migration processes to virtualization with VMWare",
+            "Installation, configuration, maintenance and administration of customers' IT systems such as computers, servers, routers, switches, backup systems.",
+            "Skills in installing, configuring, maintaining and administering operating systems such as Windows, Linux and macOS. In particular in the management of the Active Directory of Windows Server",
+            "Managing virtualization solutions with VMWare ESXi, including creating virtual machines and managing host clusters. Knowledge of physical server migration processes to virtualization with VMWare",
         ],
-      },
+    },
 ];
 
 export const projects = [
     {
-      name: "Boarding Kennels",
-      description:
-        "Live production site for a boarding kennels business. The contact form is powered by Email.js",
-      tags: [
-        {
-          name: "Reactjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Tailwindcss",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Netlify",
-          color: "pink-text-gradient",
-        },
-      ],
-      iframe: 'https://gigiul.github.io/boarding_kennels/',
-      github_link: "https://github.com/gigiul/boarding_kennels/",
+        name: "Boarding Kennels",
+        description:
+            "Live production site for a boarding kennels business. The contact form is powered by Email.js",
+        tags: [
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Tailwindcss",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Netlify",
+                color: "pink-text-gradient",
+            },
+        ],
+        iframe: 'https://gigiul.github.io/boarding_kennels/',
+        github_link: "https://github.com/gigiul/boarding_kennels/",
+    },
+    /* {
+        name: "Spotify Clone",
+        description:
+            "Spotify clone using React, Redux, FastAPI and ShazamAPI.",
+        tags: [
+            {
+                name: "Redux",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "FastAPI",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Netlify",
+                color: "pink-text-gradient",
+            },
+        ],
+        //iframe: 'https://gigiulspotifyclone.netlify.app/',
+        image: spotify,
+        github_link: "https://github.com/gigiul/spotify_clone",
+    }, */
+    {
+        name: "Netflix Clone",
+        description:
+            "Rebuild Netflix using TheMovieDB API and Firebase for authentication",
+        tags: [
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Tailwindcss",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Firebase",
+                color: "pink-text-gradient",
+            },
+        ],
+        iframe: 'https://gigiul.github.io/netflix_frontend/',
+        github_link: "https://github.com/gigiul/netflix_frontend",
     },
     {
-      name: "Spotify Clone",
-      description:
-        "Spotify clone using React, Redux, FastAPI and ShazamAPI.",
-      tags: [
-        {
-          name: "Redux",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "FastAPI",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Netlify",
-          color: "pink-text-gradient",
-        },
-      ],
-  /*     iframe: 'https://gigiulspotifyclone.netlify.app/', */
-      image: spotify,
-      github_link: "https://github.com/gigiul/spotify_clone",
+        name: "Crypto Tracker",
+        description:
+            "Crypto tracker using CoinGecko API",
+        tags: [
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "CSS",
+                color: "green-text-gradient",
+            },
+            {
+                name: "CoinGecko",
+                color: "pink-text-gradient",
+            },
+        ],
+        iframe: 'https://gigiul.github.io/crypto_app/',
+        github_link: "https://github.com/gigiul/crypto_app/",
     },
-    {
-      name: "Netflix Clone",
-      description:
-        "Rebuild Netflix using TheMovieDB API and Firebase for authentication",
-      tags: [
-        {
-          name: "Reactjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Tailwindcss",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Firebase",
-          color: "pink-text-gradient",
-        },
-      ],
-      iframe: 'https://gigiul.github.io/netflix_frontend/',
-      github_link: "https://github.com/gigiul/netflix_frontend",
-    },
-    {
-      name: "Crypto Tracker",
-      description:
-        "Crypto tracker using CoinGecko API",
-      tags: [
-        {
-          name: "Reactjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "CSS",
-          color: "green-text-gradient",
-        },
-        {
-          name: "CoinGecko",
-          color: "pink-text-gradient",
-        },
-      ],
-      iframe: 'https://gigiul.github.io/crypto_app/',
-      github_link: "https://github.com/gigiul/crypto_app/",
-    },
-  ];
+];
