@@ -8,6 +8,7 @@ import { Wrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai'
+import { isMobile } from "react-device-detect";
 
 
 const ProjectCard = ({
@@ -20,7 +21,7 @@ const ProjectCard = ({
   image
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={`${!isMobile ? fadeIn("up", "spring", index * 0.5, 0.75) : null}`}>
       <Tilt
         tiltMaxAngleX={8}
         tiltMaxAngleY={8}
