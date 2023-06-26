@@ -275,7 +275,7 @@ export const projects = [
     {
         name: "Boarding Kennels",
         description:
-            "Live production site for a boarding kennels business. The contact form is powered by Email.js",
+            "Live production site for a boarding kennels business. Implemented GA4 and Clarity for analytics.",
         tags: [
             {
                 name: "Reactjs",
@@ -286,12 +286,33 @@ export const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "Netlify",
+                name: "Vercel",
                 color: "pink-text-gradient",
             },
         ],
-        iframe: 'https://gigiul.github.io/boarding_kennels/',
+        iframe: 'https://lacasettanelverde.com',
         github_link: "https://github.com/gigiul/boarding_kennels/",
+    },
+    {
+        name: "Feridhoo Coral Restoration Project",
+        description:
+            "Refactoring an existing landing page for a Maldive's no-profit org.",
+        tags: [
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Tailwindcss",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Vercel",
+                color: "pink-text-gradient",
+            },
+        ],
+        iframe: 'https://coral-reef-restoration-rkdhr5dfd-gigiul.vercel.app/',
+        github_link: "https://github.com/gigiul/coral-reef-restoration",
     },
     /* {
         name: "Spotify Clone",
